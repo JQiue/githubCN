@@ -1,0 +1,19 @@
+{
+  "name": "github_cn",
+  "version": "1.0.0",
+  "description": "Github 汉化浏览器插件",
+  "scripts": {
+    "publish": "node app.js"
+  },
+  "keywords": [],
+  "author": "JQiue",
+  "license": "ISC",
+  "devDependencies": {
+    "@plasmo-corp/ewu": "^0.6.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "compressing": "^1.6.2",
+    "dotenv": "^16.0.3"
+  }
+}
