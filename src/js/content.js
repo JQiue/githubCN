@@ -9,7 +9,7 @@ const allData = [
   [`Explore`, `探索`],
   [`Following`, `关注者`],
   [`Find a repository…`, `查找仓库`],
-  [`Latest changes`, `最新变动`],
+  [`Latest changes`, `最新变化`],
   [`hours ago`, `小时前`],
   [`days ago`, `天前`],
   [`New`, `新建`],
@@ -58,7 +58,7 @@ const allData = [
   [`Publish your first package`, `发布你的第一个包`],
   [`Releases`, `发布`],
   [`Packages `, `包`],
-  [`No packages published `, `没有发布任何软件包`],
+  [`No packages published`, `没有发布任何软件包`],
   [`Languages`, `语言`],
   [`Show more`, `显示更多`],
   [`Recent activity`, `最新动态`],
@@ -183,18 +183,92 @@ const allData = [
   [`New Issue`, `新问题`],
   [`There aren’t any open issues.`, `没有任何公开的问题。`],
   [`Signing in…`, `登录中...`],
+  [`Edit repository details`, `编辑仓库详情信息`],
+  [`Website`, `网站`],
+  [`Cancer`, `取消`],
+  [`Save changes`, `保存修改`],
+  [`Protect this branch`, `保护这个分支`],
+  [`Get started with GitHub Actions`, `开始使用 Github Actions`],
+  [
+    `Build, test, and deploy your code. Make code reviews, branch management, and issue triaging work the way you want. Select a workflow to get started.`,
+    `构建、测试和部署你的代码。使代码审查、分支管理和问题分流以你想要的方式进行。选择一个工作流程来开始。`,
+  ],
+  [`Browse all categories`, `浏览所有类型`],
+  [`Automation`, `自动化`],
+  [`Deployment`, `部署`],
+  [`Continuous integration`, `持续集成`],
+  [`Reporting`, `报告`],
+  [`General`, `常规`],
+  [`Public email`, `公开的邮箱`],
+  [`Bio`, `个人简历`],
+  [`URL`, `网站`],
+  [`Twitter username`, `Twitter 用户名`],
+  [`Company`, `公司`],
+  [`Location`, `地址`],
+  [`Contributions & Activity`, `贡献和活动`],
+  [`Successor settings`, `继承人设置`],
+  [`You have not designated a successor.`, `你还没有指定继承人`],
+  [`Delete account`, `删除账户`],
+  [
+    `Once you delete your account, there is no going back. Please be certain.`,
+    `一旦你删除了你的账户，就不能够找回了，请慎重`,
+  ],
+  [`Display current local time`, `显示当前的本地时间`],
+  [`Keyboard shortcuts`, `快捷键`],
+  [`Subscriptions`, `订阅`],
+  [`Verified domains`, `验证的域名`],
+  [`There are no verified domains.`, `没有经过验证的域名`],
+  [`Password and authentication`, `密码和身份验证`],
+  [`Change password`, `修改密码`],
+  [`Old password`, `旧密码`],
+  [`New password`, `新密码`],
+  [`Confirm new password`, `确认新的密码`],
+  [`Two-factor authentication`, `两步验证`],
+  [`Confirm new password`, `确认新的密码`],
+  [`Confirm access`, `确认访问`],
+  [`Confirm`, `确认`],
+  [`Who has access`, `谁有权限`],
+  [`Code and automation`, `代码和自动化`],
+  [`Default branch`, `默认分支`],
+  [`Branch protection rules`, `分支保护规则`],
+  [`Protected tags`, `保护标签`],
+  [`Environments`, `环境变量`],
+  [`Code security and analysis`, `代码安全性和分析`],
+  [`Integrations`, `集成`],
+  [`Email notifications`, `邮件通知`],
+  [`Collaborators`, `合作者`],
+  [`Contributors`, `贡献者`],
+  [`Community Standards`, `社区标准`],
+  [`Traffic`, `流量`],
+  [`Code frequency`, `代码频率`],
+  [`Dependency graph`, `依赖图`],
+  [`Contributors`, `贡献者`],
+  [`You can`, `你可以`],
+  [`@mention`, `@`],
+  [
+    `other users and organizations to link to them.`,
+    `其他用户和组织来链接它们`,
+  ],
+  [`Save`, `保存`],
+  [`Cancel`, `取消`],
+  [`Welcome to the all-new projects`, `欢迎来到全新的项目`],
+  [`No open projects`, `没有开放的项目`],
+  [`Add a bio`, `添加个人简介`],
+  [`Loading more...`, `正在加载中`],
+  [``, ``],
+  [``, ``],
+  [``, ``],
 ];
 
-let MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-let MutationObserverConfig = {
+const MutationObserverConfig = {
   childList: true,
   subtree: true,
   attributeFilter: ["data-label"],
   characterData: true,
 };
 
-let observer = new MutationObserver(function (mutations) {
-  let treeWalker = document.createTreeWalker(
+const observer = new MutationObserver(function (mutations) {
+  const treeWalker = document.createTreeWalker(
     document.body,
     NodeFilter.SHOW_ALL,
     {
@@ -245,7 +319,6 @@ let observer = new MutationObserver(function (mutations) {
         currentNode.setAttribute("data-disable-with", dataMap.get(key6));
       }
     }
-
     currentNode = treeWalker.nextNode();
   }
 });
@@ -253,4 +326,3 @@ let observer = new MutationObserver(function (mutations) {
 observer.observe(document.body, MutationObserverConfig);
 
 console.log("已经汉化");
-console.log(`\n\n`);
