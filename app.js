@@ -1,6 +1,5 @@
 import { EdgeWebstoreClient } from "@plasmo-corp/ewu";
 import compressing from "compressing";
-
 import dotenv from "dotenv";
 
 dotenv.config();
