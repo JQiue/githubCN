@@ -3,7 +3,6 @@ import compressing from "compressing";
 import dotenv from "dotenv";
 
 dotenv.config();
-console.log(process.env);
 compressing.zip.compressDir("src/", "dist.zip");
 
 const client = new EdgeWebstoreClient({
@@ -17,3 +16,5 @@ const data = await client.submit({
   filePath: "./dist.zip",
   notes: "Developer notes",
 });
+
+console.log(`the publish operation id：${data}`);
