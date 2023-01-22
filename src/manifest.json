@@ -3,7 +3,7 @@
   "name": "GithubCN",
   "short_name": "GithubCN",
   "description": "Github 汉化插件",
-  "version": "1.2",
+  "version": "1.3",
   "homepage_url": "https://github.com/JQiue/githubCN",
   "icons": {
     "16": "img/icon-16.png",
@@ -15,12 +15,8 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://github.com/*"
-      ],
-      "js": [
-        "js/content.js"
-      ],
+      "matches": ["https://github.com/*"],
+      "js": ["js/content.js"],
       "run_at": "document_end",
       "all_frames": true
     }
