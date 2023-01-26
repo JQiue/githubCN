@@ -317,6 +317,24 @@ const allData = [
   [`This repository is currently private.`, `这个仓库当前是私有的`],
   [`Lists`, `列表`],
   [`Create list`, `创建列表`],
+  [`Pushes`, `推送`],
+  [
+    `Limit how many branches and tags can be updated in a single push`,
+    `限制一次推送中可以更新多少个分支和标签`,
+  ],
+  [`I want to make this repository private`, `我想要让这个仓库变为私有`],
+  [`I have read and understand these effects`, `我已经阅读并理解了这些影响`],
+  [`New issue`, `新建问题`],
+  [`Labels`, `标签`],
+  [`New milestone`, `新建里程碑`],
+  [`Milestones`, `里程碑`],
+  [`You haven’t created any Milestones.`, `你还没有创建任何里程碑。`],
+  [`Edit`, `编辑`],
+  [`Delete`, `删除`],
+  [`Close`, `关闭`],
+  [``, ``],
+  [``, ``],
+  [``, ``],
   [``, ``],
   [``, ``],
   [``, ``],
@@ -389,5 +407,3 @@ const observer = new MutationObserver(function (mutations) {
 });
 
 observer.observe(document.body, MutationObserverConfig);
-
-console.log("已经汉化");
