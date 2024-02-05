@@ -7,6 +7,7 @@ const manifest: ManifestType = {
   version: packageJson.version,
   description: packageJson.description,
   // options_page: "src/options/index.html",
+  // devtools_page: "src/devtools/index.html",
   background: { service_worker: "src/background/index.js" },
   // action: {
   //   default_popup: "src/popup/index.html",
@@ -28,7 +29,6 @@ const manifest: ManifestType = {
       all_frames: true,
     },
   ],
-  devtools_page: "src/devtools/index.html",
   web_accessible_resources: [
     {
       resources: ["icon-48.png", "icon-34.png", "icon-16.png"],

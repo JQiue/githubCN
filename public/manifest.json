@@ -23,7 +23,6 @@
       "all_frames": true
     }
   ],
-  "devtools_page": "src/devtools/index.html",
   "web_accessible_resources": [
     {
       "resources": [
