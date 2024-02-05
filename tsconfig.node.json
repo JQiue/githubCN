@@ -1,23 +1,16 @@
 {
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "composite": true,
-    "esModuleInterop": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "paths": {
-      "@/*": ["./src/*"],
-      "~/*": ["./src/*"],
-      "src/*": ["./src/*"]
-    },
-    "types": ["unplugin-icons/types/vue", "chrome-types"]
-  },
+  "extends": "@vue/tsconfig/tsconfig.node.json",
   "include": [
-    "vite.config.ts",
-    "manifest.config.ts",
-    "define.config.ts",
-    "manifest.json",
-    ".eslintrc.cjs"
-  ]
+    "vite.config.*",
+    "package.json",
+    "vitest.config.*",
+    "cypress.config.*",
+    "src/**/*.ts",
+    "scripts/**/*.ts"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "lib": ["esnext", "dom"],
+    "types": ["node", "chrome"]
+  }
 }

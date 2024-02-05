@@ -1,0 +1,9 @@
+{
+  "watch": [
+    "src",
+    "scripts",
+    "vite.config.ts"
+  ],
+  "ext": "tsx,css,html,ts,vue,json",
+  "exec": "vite build"
+}

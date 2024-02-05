@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "GithubCN",
+  "version": "1.8.0",
+  "description": "Github 汉化插件",
+  "background": {
+    "service_worker": "src/background/index.js"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "34": "icon-34.png",
+    "48": "icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "src/content/index.js"
+      ],
+      "matches": [
+        "https://github.com/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "devtools_page": "src/devtools/index.html",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icon-48.png",
+        "icon-34.png",
+        "icon-16.png"
+      ],
+      "matches": []
+    }
+  ]
+}

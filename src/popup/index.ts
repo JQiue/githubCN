@@ -1,28 +1,5 @@
-import '@/assets/base.scss'
-import { createPinia } from 'pinia'
-import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router/auto'
-import App from './app.vue'
-import './index.scss'
+import { createApp } from "vue";
+import "@src/styles/index.scss";
+import Popup from "./Popup.vue";
 
-const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
-  extendRoutes: (routes) => {
-    routes.push({
-      path: '/',
-      redirect: '/popup',
-    })
-
-    return routes
-  },
-})
-
-createApp(App).use(router).use(createPinia()).mount('#app')
-
-// console.log(router.getRoutes())
-
-self.onerror = function (message, source, lineno, colno, error) {
-  console.info(
-    `Error: ${message}\nSource: ${source}\nLine: ${lineno}\nColumn: ${colno}\nError object: ${error}`
-  )
-}
+createApp(Popup).mount("#app-container");
