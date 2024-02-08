@@ -355,14 +355,19 @@ const allData = [
   [`SSH and GPG keys`, `SSH和GPG密钥`],
   [`Cancel changes`, `取消更改`],
   [`Commit changes...`, `提交更改...`],
-  [``, ``],
-  [``, ``],
-  [``, ``],
-  [``, ``],
-  [``, ``],
-  [``, ``],
-  [``, ``],
-  [``, ``],
+  [`LICENSE`, `协议`],
+  [`License`, `协议`],
+  [`README.md`, `简介`],
+  [`Wiki`, `维基百科`],
+  [`agging suggestions It’s common practice to prefix your version names with the letter v. Some good tag names might be v1.0.0 or v2.3.4.If the tag isn’t meant for production use, add a pre-release version after the version name. Some good pre-release versions might be v0.2.0-alpha or v5.9-beta.3.`, 
+   `标记建议 通常的做法是在版本名前面加上字母v。一些好的标签名可能是v1.0.0或v2.3.4。如果标记不是正式版，请在版本名称后添加预发布版本。一些好的预发布版本可能是v0.2.0-alpha或v5.9-beta.3。`],
+  [`Set as a pre-release`, `标记成预发布版`],
+  [`Publish release`, `发布`],
+  [`Code 55% faster with GitHub Copilot`, `使用Github Copilet提高55%效率`],
+  [`Rename`, `重命名`],
+  [`star`, `点赞`],
+  [`stars`, `点赞`],
+  [`Commit changes`,`提交更改`]
 ];
 
 const MutationObserverConfig = {
