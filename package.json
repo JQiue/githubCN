@@ -1,6 +1,6 @@
 {
   "name": "github_cn",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Github 浏览器汉化扩展",
   "scripts": {
     "publish": "node app.js"
